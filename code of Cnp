@@ -1,0 +1,29 @@
+#include<iostream>
+#include<math.h>
+using namespace std ;
+main()
+{
+
+	int n,p,s,k,f,i;
+	cout<<"il faut N>P"<<endl;
+    cout<<"donnez un nombre N"<<endl;
+	cin>>n;
+	f=1;
+	for (i=1 ; i<=n ; i++)
+      {
+        f=f*i;
+      }
+    cout<<"donnez un nombre P"<<endl;  
+    cin>>p;
+    s=1;
+    for (i=1 ; i<=(n-p) ; i++)
+      {
+        s=s*i;
+      }
+      k=1;
+    for(i=1 ; i<=p ; i++)
+      {
+      	k=k*i;
+	  }
+	cout<<f/(k*s)<<endl;
+}
